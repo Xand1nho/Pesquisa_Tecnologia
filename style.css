@@ -1,124 +1,45 @@
 p{
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
     padding: 30px;
     line-height: 43px;
     text-align: left;
-
-    font-family: Arial, sans-serif;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
     margin: 50px;
     font-size: 25px;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 18px;
-    
 }
 
 h1{
     
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
-    color: darkblue;
+    color: rgb(255, 0, 0);
     margin-top: 50px;
+    border-bottom: 5px solid black;
+    padding-bottom: 15px;
 }
 
 
 body{
-    background: #a7a7a7;
-    background-image: url("Background.webp");
+    background-image: url("Baixados.webp");
     background-repeat:  no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     transition: all 2.0s ease-in-out;
 }
-
-
-
-
-
-
-@layer demo {
-  :root {
-    --accent: rgb(0, 0, 0);
-    --canvas: color-mix(in lch, canvas, canvasText 1%);
-    --border: color-mix(in lch, canvas, canvasText 10%);
-    --speed: 6000ms;
-    --border-radius: 24;
-    --border-width: 3;
-    --trail-size: 25;
-  }
- 
-
-  .border {
-    position: absolute;
-    inset: 0;
-    clip-path: inset(0 0 0 0 round calc(var(--border-radius) * 1px));
-    border-radius: calc(var(--border-radius) * 1px);
-    background: var(--border);
-    z-index: -1;
-    border: 0;
-    container-type: inline-size;
-  }
-
-  .trail {
-    width: calc(var(--trail-size) * 1cqmin);
-    aspect-ratio: 2 / 1;
-    position: absolute;
-    background: radial-gradient(
-      100% 100% at right,
-      var(--accent, red),
-      transparent 50%
-    );
-    offset-path: border-box;
-    offset-anchor: 100% 50%;
-    animation: journey var(--speed, 6s) infinite linear;
-  }
   
-  @container(width > 600px) {
-    .trail {
-      --speed: 3500ms;    
-    }
-  }
-
-  @keyframes journey {
-    to {
-      offset-distance: 100%;
-    }
-  }
-
- 
-
-  .content {
-    background: linear-gradient(var(--canvas), var(--canvas)) padding-box,
-      transparent;
-    border: calc(var(--border-width) * 1px) solid transparent;
-    border-radius: calc(var(--border-radius) * 1px);
-    padding: clamp(1rem, 3vmin + 1rem, 6rem);
-    display: grid;
-    gap: clamp(1rem, 3vmin + 1rem, 4rem);
-  }
-
-  
- 
-  
-
-  
-  
-  
-
-  main * {
-    transform-style: preserve-3d;
-  }
-
- 
- 
-
-  
-
-  
+div.tp-dfwv img{
+    width: 275px;
 }
-
 div.tp-dfwv {
   width: 274px;
 }
